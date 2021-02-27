@@ -9,20 +9,24 @@ This mod will work on Innersloth servers, but everybody in the lobby has to have
 # What does the mod add?
 
 ## Medic
+## Médico
 The Medic can give any player a shield that will make them immortal. Although, if The Medic dies, the shield will break.
 The only exception is The Officer; they will still die if they try to kill a Crewmate.
 The Medic's other feature shows when they find a corpse: they can get a report that contains clues to the killer's identity.
 The type of information they get is based on a timer that can be configured inside the lobby.
   
 ## Officer
+## Xerife
 The Officer is a class of Crewmate that is allowed to kill people, similar to Impostors.
 Their goal is to locate the Impostor and deliver vigilante justice, but if they accidentally shoot a Crewmate, they die instead.
   
 ## Engineer
+## Engenheiro
 The Engineer can repair one emergency per game from anywhere on the entire map.
 The other ability of The Engineer is that they are able to use the vents that were previously exclusive to Impostors.
 
 ## Joker
+## Coringa
 The Joker is interesting; they aren't part of the Crewmates **or** Impostors, and they can only win by being falsely convicted as an Impostor.
 If The Joker get's voted off the ship, the game will end instantly.
 The Joker also has no tasks.
@@ -46,63 +50,78 @@ For the rest of you, here are the installation instructions.
 # Game Options
   
 ## Show Medic
+## Mostrar Médico
 *Default: false*<br/>
 This is the game setting that toggles whether the Medic's name is lit up green for everybody in the game, or just themselves.
   
 ## Show Shielded Player
+## Mostrar jogador com escudo
 *Default: true*<br/>
 When The Medic shield's somebody, their visor will change to the color cyan. If this setting is set to 1, everybody can see the color change. If not, only the shielded player can see.
   
 ## Murder Attempt Indicator For Shielded Player
+## Indicador de tentativa de assassinato para o jogador com escudo
 *Default: true*<br/>
 If this setting is enabled, the shielded player will hear a *ting* noise when somebody tries (and fails) to murder them.
   
 ## Show Officer
+## Mostrar Xerife
 *Default: false*<br/>
 If this setting is enabled, The Officer's name will be lit up blue for everyone. If it isn't, it will only be lit for themselves.
   
 ## Officer Kill Cooldown
+## Tempo de recarga para ataque do Xerife
 *Default: 30*<br/>
 This is the kill cooldown length for The Officer. The first cooldown on the first round will be equal to ten no matter what, just like the Impostor.
   
 ## Show Engineer
+## Mostrar Engenheiro
 *Default: false*<br/>
 If this setting is enabled, The Engineer's name will be lit up orange for everyone. If it isn't, it will only be lit for themselves.
   
 ## Show Joker
+## Mostrar Coringa
 *Default: false*<br/>
 If this setting is enabled, The Jokers's name will be lit up grey for everyone. If it isn't, it will only be lit for themselves.
   
 ## Joker Can Die To Officer
+## Coringa pode morrer para o Xerife
 *Default: true*<br/>
 If this setting is enabled, The Officer will be able to kill The Joker without repercussion. If it's disabled, killing The Joker will execute as if they were a Crewmate.
   
 ### Time Where Medic Reports Will Have Name
+### Tempo em que o report do Médico mostra o nome do assassino após o assassinato
 *Default: 5*<br/>
 The amount of time (in seconds) that The Medic will have to report the body since death to get the killer's name.
 
 ## Time Where Medic Reports Will Have Color Type
+## Tempo em que o report do Médico mostra o tipo de cor do assassino após o assassinato
 *Default: 20*<br/>
 The amount of time (in seconds) that The Medic will have to report the body since death to get the killer's color type.  
 "color type" means either "lighter" or "darker", and a full list of colors and their types are included at the bottom of the page.  
   
 ## Medic Spawn Chance
+## Chance de ter um Médico na partida
 *Default: 100*<br/>
 The percentage chance that anybody in the game will become The Medic.  
   
 ## Officer Spawn Chance
+## Chance de ter um Xerife na partida
 *Default: 100*<br/>
 The percentage chance that anybody in the game will become The Officer.  
   
 ## Engineer Spawn Chance
+## Chance de ter um Engenheiro na partida
 *Default: 100*<br/>
 The percentage chance that anybody in the game will become The Engineer.  
   
 ## Joker Spawn Chance
+## Chance de ter um Coringa na partida
 *Default: 100*<br/>
 The percentage chance that anybody in the game will become The Joker.  
 
 # Color Types
+# Tipos de cores
 Red is darker.  
 Blue is darker.  
 Green is darker.  

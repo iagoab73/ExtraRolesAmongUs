@@ -12,7 +12,7 @@ namespace ExtraRoles
     {
         static void Postfix(PlayerControl __instance, GameData.PlayerInfo CAKODNGLPDF)
         {
-            System.Console.WriteLine("Report Body!");
+            System.Console.WriteLine("Reporte o Corpo!");
             var matches = killedPlayers.Where(x => x.PlayerId == CAKODNGLPDF.PlayerId).ToArray();
             DeadPlayer killer = null;
 

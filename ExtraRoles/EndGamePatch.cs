@@ -34,7 +34,7 @@ namespace ExtraRolesMod
             if (!flag)
                 return;
 
-            __instance.WinText.Text = "Defeat";
+            __instance.WinText.Text = "Derrota";
             __instance.WinText.Color = Palette.ImpostorRed;
             __instance.BackgroundBar.material.color = new Color(1, 0, 0);
         }

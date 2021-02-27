@@ -29,39 +29,39 @@ namespace ExtraRolesMod
             if (br.KillAge > Main.Config.medicKillerColorDuration * 1000)
             {
                 return
-                    $"Body Report: The corpse is too old to gain information from. (Killed {Math.Round(br.KillAge / 1000)}s ago)";
+                    $"Report do Corpo: Já se passou muito tempo desde a morte para conseguir alguma informação. (Morto {Math.Round(br.KillAge / 1000)}s atrás)";
             }
 
             if (br.DeathReason == (DeathReason) 3)
             {
                 return
-                    $"Body Report (Officer): The cause of death appears to be suicide! (Killed {Math.Round(br.KillAge / 1000)}s ago)";
+                    $"Report do Corpo (Xerife): A causa da morte parece ser sucídio! (Morto {Math.Round(br.KillAge / 1000)}s atrás)";
             }
 
             if (br.KillAge < Main.Config.medicKillerNameDuration * 1000)
             {
                 return
-                    $"Body Report: The killer appears to be {br.Killer.Data.PlayerName}! (Killed {Math.Round(br.KillAge / 1000)}s ago)";
+                    $"Report do Corpo: O assassino parece ser {br.Killer.Data.PlayerName}! (Morto {Math.Round(br.KillAge / 1000)}s atrás)";
             }
 
             var colors = new Dictionary<byte, string>()
             {
-                {0, "darker"},
-                {1, "darker"},
-                {2, "darker"},
-                {3, "lighter"},
-                {4, "lighter"},
-                {5, "lighter"},
-                {6, "darker"},
-                {7, "lighter"},
-                {8, "darker"},
-                {9, "darker"},
-                {10, "lighter"},
-                {11, "lighter"},
+                {0, "mais escura"},
+                {1, "mais escura"},
+                {2, "mais escura"},
+                {3, "mais clara"},
+                {4, "mais clara"},
+                {5, "mais clara"},
+                {6, "mais escura"},
+                {7, "mais clara"},
+                {8, "mais escura"},
+                {9, "mais escura"},
+                {10, "mais clara"},
+                {11, "mais clara"},
             };
             var typeOfColor = colors[br.Killer.Data.ColorId];
             return
-                $"Body Report: The killer appears to be a {typeOfColor} color. (Killed {Math.Round(br.KillAge / 1000)}s ago)";
+                $"Report do Corpo: O assassino parece ser de uma cor {typeOfColor}. (Morto {Math.Round(br.KillAge / 1000)}s atrás)";
         }
     }
 
@@ -245,7 +245,7 @@ namespace ExtraRolesMod
             static void Postfix(VersionShower __instance)
             {
                 __instance.text.Text = __instance.text.Text + "   Extra Roles " + versionString +
-                                       " Loaded. (http://www.extraroles.net/)";
+                                       " Loaded. (http://www.extraroles.net/) - Traduzido para PT-BR por iagoab";
             }
         }
 

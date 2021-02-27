@@ -26,42 +26,42 @@ namespace ExtraRolesMod
 
         //This section uses the https://github.com/DorCoMaNdO/Reactor-Essentials framework
 
-        public static CustomToggleOption showMedic = CustomOption.AddToggle("Show Medic", false);
-        public static CustomToggleOption showOfficer = CustomOption.AddToggle("Show Officer", false);
-        public static CustomToggleOption showEngineer = CustomOption.AddToggle("Show Engineer", false);
-        public static CustomToggleOption showJoker = CustomOption.AddToggle("Show Joker", false);
+        public static CustomToggleOption showMedic = CustomOption.AddToggle("Mostrar Médico", false);
+        public static CustomToggleOption showOfficer = CustomOption.AddToggle("Mostrar Xerife", false);
+        public static CustomToggleOption showEngineer = CustomOption.AddToggle("Mostrar Engenheiro", false);
+        public static CustomToggleOption showJoker = CustomOption.AddToggle("Mostrar Coringa", false);
 
-        public static CustomStringOption showShieldedPlayer = CustomOption.AddString("Show Shielded Player",
+        public static CustomStringOption showShieldedPlayer = CustomOption.AddString("Mostrar jogador com escudo",
             new[] {"Self", "Medic", "Self+Medic", "Everyone"});
 
         public static CustomNumberOption OfficerKillCooldown =
-            CustomOption.AddNumber("Officer Kill Cooldown", 30f, 10f, 60f, 2.5f);
+            CustomOption.AddNumber("Tempo de recarga para ataque do Xerife", 30f, 10f, 60f, 2.5f);
 
         public static CustomToggleOption playerMurderIndicator =
-            CustomOption.AddToggle("Murder Attempt Indicator for Shielded Player", false);
+            CustomOption.AddToggle("Indicador de tentativa de assassinato para o jogador com escudo", false);
 
         public static CustomToggleOption
-            jokerCanDieToOfficer = CustomOption.AddToggle("Joker Can Die To Officer", true);
+            jokerCanDieToOfficer = CustomOption.AddToggle("Coringa pode morrer para o Xerife", true);
 
-        public static CustomToggleOption medicReportSwitch = CustomOption.AddToggle("Show Medic Reports", true);
+        public static CustomToggleOption medicReportSwitch = CustomOption.AddToggle("Mostrar reports do Médico", true);
 
         public static CustomNumberOption medicReportNameDuration =
-            CustomOption.AddNumber("Time Where Medic Reports Will Have Name", 0, 0, 60, 2.5f);
+            CustomOption.AddNumber("Tempo em que o report do Médico mostra o nome do assassino após o assassinato", 0, 0, 60, 2.5f);
 
         public static CustomNumberOption medicReportColorDuration =
-            CustomOption.AddNumber("Time Where Medic Reports Will Have Color Type", 15, 0, 120, 2.5f);
+            CustomOption.AddNumber("Tempo em que o report do Médico mostra o tipo de cor do assassino após o assassinato", 15, 0, 120, 2.5f);
 
         public static CustomNumberOption
-            medicSpawnChance = CustomOption.AddNumber("Medic Spawn Chance", 100, 0, 100, 5);
+            medicSpawnChance = CustomOption.AddNumber("Chance de ter um Médico na partida", 100, 0, 100, 5);
 
         public static CustomNumberOption officerSpawnChance =
-            CustomOption.AddNumber("Officer Spawn Chance", 100, 0, 100, 5);
+            CustomOption.AddNumber("Chance de ter um Xerife na partida", 100, 0, 100, 5);
 
         public static CustomNumberOption engineerSpawnChance =
-            CustomOption.AddNumber("Engineer Spawn Chance", 100, 0, 100, 5);
+            CustomOption.AddNumber("Chance de ter um Engenheiro na partida", 100, 0, 100, 5);
 
         public static CustomNumberOption
-            jokerSpawnChance = CustomOption.AddNumber("Joker Spawn Chance", 100, 0, 100, 5);
+            jokerSpawnChance = CustomOption.AddNumber("Chance de ter um Coringa na partida", 100, 0, 100, 5);
 
         public ConfigEntry<string> Ip { get; set; }
         public ConfigEntry<ushort> Port { get; set; }

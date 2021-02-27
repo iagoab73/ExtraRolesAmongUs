@@ -60,15 +60,15 @@ namespace ExtraRoles
                 case StringNames.ExileTextSN:
                 {
                     if (ExileController.Instance.Field_10.Object.isPlayerRole("Medic"))
-                        __result = ExileController.Instance.Field_10.PlayerName + " was The Medic.";
+                        __result = ExileController.Instance.Field_10.PlayerName + " era o Médico.";
                     else if (ExileController.Instance.Field_10.Object.isPlayerRole("Engineer"))
-                        __result = ExileController.Instance.Field_10.PlayerName + " was The Engineer.";
+                        __result = ExileController.Instance.Field_10.PlayerName + " era o Engenheiro.";
                     else if (ExileController.Instance.Field_10.Object.isPlayerRole("Officer"))
-                        __result = ExileController.Instance.Field_10.PlayerName + " was The Officer.";
+                        __result = ExileController.Instance.Field_10.PlayerName + " era o Xerife.";
                     else if (ExileController.Instance.Field_10.Object.isPlayerRole("Joker"))
-                        __result = ExileController.Instance.Field_10.PlayerName + " was The Joker.";
+                        __result = ExileController.Instance.Field_10.PlayerName + " era o Coringa.";
                     else
-                        __result = ExileController.Instance.Field_10.PlayerName + " was not The Impostor.";
+                        __result = ExileController.Instance.Field_10.PlayerName + " não era o Impostor.";
                     break;
                 }
                 case StringNames.ImpostorsRemainP:
