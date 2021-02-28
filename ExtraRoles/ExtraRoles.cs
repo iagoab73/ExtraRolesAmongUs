@@ -37,37 +37,37 @@ namespace ExtraRolesMod
             System.Console.WriteLine(br.KillAge);
             if (br.KillAge > ExtraRoles.MedicSettings.medicKillerColorDuration * 1000)
             {
-                return $"Body Report: The corpse is too old to gain information from. (Killed {Math.Round(br.KillAge / 1000)}s ago)";
+                return $"Relatório do corpo: Já se passou muito tempo para se obter alguma informação sobre o corpo. (Morto {Math.Round(br.KillAge / 1000)}s atrás)";
             }
             else if (br.DeathReason == (DeathReason)3)
             {
-                return $"Body Report (Officer): The cause of death appears to be suicide! (Killed {Math.Round(br.KillAge / 1000)}s ago)";
+                return $"Relatório do corpo (Xerife): A causa da morte parece ter sido suicídio. (Morto {Math.Round(br.KillAge / 1000)}s atrás)";
 
             }
             else if (br.KillAge < ExtraRoles.MedicSettings.medicKillerNameDuration * 1000)
             {
-                return $"Body Report: The killer appears to be {br.Killer.name}! (Killed {Math.Round(br.KillAge / 1000)}s ago)";
+                return $"Relatório do corpo: O assassino aparenta ter sido {br.Killer.name}! (Morto {Math.Round(br.KillAge / 1000)}s atrás)";
             }
             else
             {
                 //TODO (make the type of color be written to chat
                 var colors = new Dictionary<byte, string>()
                 {
-                    {0, "darker"},
-                    {1, "darker"},
-                    {2, "darker"},
-                    {3, "lighter"},
-                    {4, "lighter"},
-                    {5, "lighter"},
-                    {6, "darker"},
-                    {7, "lighter"},
-                    {8, "darker"},
-                    {9, "darker"},
-                    {10, "lighter"},
-                    {11, "lighter"},
+                    {0, "mais escura"},
+                    {1, "mais escura"},
+                    {2, "mais escura"},
+                    {3, "mais clara"},
+                    {4, "mais clara"},
+                    {5, "mais clara"},
+                    {6, "mais escura"},
+                    {7, "mais clara"},
+                    {8, "mais escura"},
+                    {9, "mais escura"},
+                    {10, "mais clara"},
+                    {11, "mais clara"},
                 };
                 var typeOfColor = colors[br.Killer.Data.ColorId];
-                return $"Body Report: The killer appears to be a {typeOfColor} color. (Killed {Math.Round(br.KillAge / 1000)}s ago)";
+                return $"Relatório do corpo: O assassino parece ter uma cor {typeOfColor}. (Morto {Math.Round(br.KillAge / 1000)}s atrás)";
             }
         }
     }
@@ -127,7 +127,7 @@ namespace ExtraRolesMod
         //renderer for the shield indicator
         public static SpriteRenderer shieldRenderer = null;
         //medic settings and values
-        public static string versionString = "v1.3.1";
+        public static string versionString = "v1.3.1-PT-BR";
         public static class ModdedPalette
         {
             public static Color medicColor = new Color(36f / 255f, 183f / 255f, 32f / 255f, 1);
@@ -238,7 +238,7 @@ namespace ExtraRolesMod
         {
             static void Postfix(VersionShower __instance)
             {
-                __instance.text.Text = __instance.text.Text + "   Extra Roles " + versionString + " Loaded. (http://www.extraroles.net/)";
+                __instance.text.Text = __instance.text.Text + "   Extra Roles " + versionString + " Loaded. (http://www.extraroles.net/) - Traduzido para PT-BR por iagoab";
             }
         }
 
@@ -266,7 +266,7 @@ namespace ExtraRolesMod
         {
             public static void Postfix(ShipStatus __instance)
             {
-                ConsoleTools.Info("Game Started!");
+                ConsoleTools.Info("Jogo iniciado!");
             }
         }
     }

@@ -64,15 +64,15 @@ namespace ExtraRoles
                 if (HKOIECMDOKL == StringNames.ExileTextPN || HKOIECMDOKL == StringNames.ExileTextSN)
                 {
                     if (MedicSettings.Medic != null && ExileController.Instance.Field_10.Object.PlayerId == MedicSettings.Medic.PlayerId)
-                        __result = ExileController.Instance.Field_10.PlayerName + " was The Medic.";
+                        __result = ExileController.Instance.Field_10.PlayerName + " era o Médico.";
                     else if (EngineerSettings.Engineer != null && ExileController.Instance.Field_10.Object.PlayerId == EngineerSettings.Engineer.PlayerId)
-                        __result = ExileController.Instance.Field_10.PlayerName + " was The Engineer.";
+                        __result = ExileController.Instance.Field_10.PlayerName + " era o Engenheiro.";
                     else if (OfficerSettings.Officer != null && ExileController.Instance.Field_10.Object.PlayerId == OfficerSettings.Officer.PlayerId)
-                        __result = ExileController.Instance.Field_10.PlayerName + " was The Officer.";
+                        __result = ExileController.Instance.Field_10.PlayerName + " era o Xerife.";
                     else if (JokerSettings.Joker != null && ExileController.Instance.Field_10.Object.PlayerId == JokerSettings.Joker.PlayerId)
-                        __result = ExileController.Instance.Field_10.PlayerName + " was The Joker.";
+                        __result = ExileController.Instance.Field_10.PlayerName + " era o Coringa!";
                     else
-                        __result = ExileController.Instance.Field_10.PlayerName + " was not The Impostor.";
+                        __result = ExileController.Instance.Field_10.PlayerName + " não era o Impostor.";
                 }
                 if (HKOIECMDOKL == StringNames.ImpostorsRemainP || HKOIECMDOKL == StringNames.ImpostorsRemainS)
                 {

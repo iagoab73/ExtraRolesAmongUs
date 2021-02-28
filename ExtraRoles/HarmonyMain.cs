@@ -31,21 +31,21 @@ namespace ExtraRolesMod
 
         //Hunter101#1337
 
-        public static CustomToggleOption showMedic = CustomOption.AddToggle("Show Medic", false);
-        public static CustomStringOption showShieldedPlayer = CustomOption.AddString("Show Shielded Player", new string[] { "Self", "Medic", "Self+Medic", "Everyone" });
-        public static CustomToggleOption playerMurderIndicator = CustomOption.AddToggle("Murder Attempt Indicator for Shielded Player", true);
-        public static CustomToggleOption showOfficer = CustomOption.AddToggle("Show Officer", false);
-        public static CustomNumberOption OfficerKillCooldown = CustomOption.AddNumber("Officer Kill Cooldown", 30f, 10f, 60f, 2.5f);
-        public static CustomToggleOption showEngineer = CustomOption.AddToggle("Show Engineer", false);
-        public static CustomToggleOption showJoker = CustomOption.AddToggle("Show Joker", false);
-        public static CustomToggleOption jokerCanDieToOfficer = CustomOption.AddToggle("Joker Can Die To Officer", true);
-        public static CustomToggleOption medicReportSwitch = CustomOption.AddToggle("Show Medic Reports", true);
-        public static CustomNumberOption medicReportNameDuration = CustomOption.AddNumber("Time Where Medic Reports Will Have Name", 5, 0, 60, 2.5f);
-        public static CustomNumberOption medicReportColorDuration = CustomOption.AddNumber("Time Where Medic Reports Will Have Color Type", 20, 0, 120, 2.5f);
-        public static CustomNumberOption medicSpawnChance = CustomOption.AddNumber("Medic Spawn Chance", 100, 0, 100, 5);
-        public static CustomNumberOption officerSpawnChance = CustomOption.AddNumber("Officer Spawn Chance", 100, 0, 100, 5);
-        public static CustomNumberOption engineerSpawnChance = CustomOption.AddNumber("Engineer Spawn Chance", 100, 0, 100, 5);
-        public static CustomNumberOption jokerSpawnChance = CustomOption.AddNumber("Joker Spawn Chance", 100, 0, 100, 5);
+        public static CustomToggleOption showMedic = CustomOption.AddToggle("Mostrar Médico", false);
+        public static CustomStringOption showShieldedPlayer = CustomOption.AddString("Mostrar jogador com escudo:\n\n Self - Apenas Proprio Jogador\n Medic - Apenas o Médico\n Self+Medic - Apenas o próprio jogador e o Médico\n Everyone - Todos os jogadores", new string[] { "Self", "Medic", "Self+Medic", "Everyone" });
+        public static CustomToggleOption playerMurderIndicator = CustomOption.AddToggle("Indicador de tentativa de assassinato à jogador com escudo", true);
+        public static CustomToggleOption showOfficer = CustomOption.AddToggle("Mostrar Xerife", false);
+        public static CustomNumberOption OfficerKillCooldown = CustomOption.AddNumber("Tempo de recarga do tiro do Xerife", 30f, 10f, 60f, 2.5f);
+        public static CustomToggleOption showEngineer = CustomOption.AddToggle("Mostrar Engenheiro", false);
+        public static CustomToggleOption showJoker = CustomOption.AddToggle("Mostrar Coringa", false);
+        public static CustomToggleOption jokerCanDieToOfficer = CustomOption.AddToggle("Coringa pode morrer para Xerife", true);
+        public static CustomToggleOption medicReportSwitch = CustomOption.AddToggle("Mostrar relatórios do Médico", true);
+        public static CustomNumberOption medicReportNameDuration = CustomOption.AddNumber("Tempo em que o relatório do Médico mostram o nome", 5, 0, 60, 2.5f);
+        public static CustomNumberOption medicReportColorDuration = CustomOption.AddNumber("Tempo em que o relatório do Médico mostram o tipo de cor", 20, 0, 120, 2.5f);
+        public static CustomNumberOption medicSpawnChance = CustomOption.AddNumber("Chance de ter um Médico", 100, 0, 100, 5);
+        public static CustomNumberOption officerSpawnChance = CustomOption.AddNumber("Chance de ter um Xerife", 100, 0, 100, 5);
+        public static CustomNumberOption engineerSpawnChance = CustomOption.AddNumber("Chance de ter um Engenheiro", 100, 0, 100, 5);
+        public static CustomNumberOption jokerSpawnChance = CustomOption.AddNumber("Chance de ter um Coringa", 100, 0, 100, 5);
         
         public ConfigEntry<string> Ip { get; set; }
         public ConfigEntry<ushort> Port { get; set; }
