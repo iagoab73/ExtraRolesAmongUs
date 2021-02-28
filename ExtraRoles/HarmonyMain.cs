@@ -46,10 +46,10 @@ namespace ExtraRolesMod
         public static CustomToggleOption medicReportSwitch = CustomOption.AddToggle("Mostrar reports do Médico", true);
 
         public static CustomNumberOption medicReportNameDuration =
-            CustomOption.AddNumber("Tempo em que o report do Médico mostra o nome do assassino após o assassinato", 0, 0, 60, 2.5f);
+            CustomOption.AddNumber("Tempo após a morte para o report do Médico mostrar o nome do assassino", 0, 0, 60, 2.5f);
 
         public static CustomNumberOption medicReportColorDuration =
-            CustomOption.AddNumber("Tempo em que o report do Médico mostra o tipo de cor do assassino após o assassinato", 15, 0, 120, 2.5f);
+            CustomOption.AddNumber("Tempo após a morte para o report do Médico mostrar o tipo de cor do assassino", 15, 0, 120, 2.5f);
 
         public static CustomNumberOption
             medicSpawnChance = CustomOption.AddNumber("Chance de ter um Médico na partida", 100, 0, 100, 5);

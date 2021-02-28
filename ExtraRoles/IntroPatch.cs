@@ -26,9 +26,9 @@ namespace ExtraRolesMod
 
             if (PlayerControl.LocalPlayer.isPlayerRole("Medic"))
             {
-                __instance.__this.Title.Text = "Medic";
+                __instance.__this.Title.Text = "Médico";
                 __instance.__this.Title.Color = Main.Palette.medicColor;
-                __instance.__this.ImpostorText.Text = "Crie um escudo para proteger um [8DFFFF]Crewmate";
+                __instance.__this.ImpostorText.Text = "Crie um escudo para proteger um [8DFFFF]Tripulante";
                 __instance.__this.BackgroundBar.material.color = Main.Palette.medicColor;
                 return;
             }
@@ -37,7 +37,7 @@ namespace ExtraRolesMod
             {
                 __instance.__this.Title.Text = "Xerife";
                 __instance.__this.Title.Color = Main.Palette.officerColor;
-                __instance.__this.ImpostorText.Text = "Ataque o [FF0000FF]Impostor";
+                __instance.__this.ImpostorText.Text = "Atire no [FF0000FF]Impostor";
                 __instance.__this.BackgroundBar.material.color = Main.Palette.officerColor;
                 return;
             }
