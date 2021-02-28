@@ -32,7 +32,7 @@ namespace ExtraRolesMod
         //Hunter101#1337
 
         public static CustomToggleOption showMedic = CustomOption.AddToggle("Mostrar Médico", false);
-        public static CustomStringOption showShieldedPlayer = CustomOption.AddString("Mostrar jogador com escudo:\n\n Self - Apenas Proprio Jogador\n Medic - Apenas o Médico\n Self+Medic - Apenas o próprio jogador e o Médico\n Everyone - Todos os jogadores", new string[] { "Self", "Medic", "Self+Medic", "Everyone" });
+        public static CustomStringOption showShieldedPlayer = CustomOption.AddString("Mostrar jogador com escudo para", new string[] { "Self", "Medic", "Self+Medic", "Everyone" });
         public static CustomToggleOption playerMurderIndicator = CustomOption.AddToggle("Indicador de tentativa de assassinato à jogador com escudo", true);
         public static CustomToggleOption showOfficer = CustomOption.AddToggle("Mostrar Xerife", false);
         public static CustomNumberOption OfficerKillCooldown = CustomOption.AddNumber("Tempo de recarga do tiro do Xerife", 30f, 10f, 60f, 2.5f);
@@ -40,8 +40,8 @@ namespace ExtraRolesMod
         public static CustomToggleOption showJoker = CustomOption.AddToggle("Mostrar Coringa", false);
         public static CustomToggleOption jokerCanDieToOfficer = CustomOption.AddToggle("Coringa pode morrer para Xerife", true);
         public static CustomToggleOption medicReportSwitch = CustomOption.AddToggle("Mostrar relatórios do Médico", true);
-        public static CustomNumberOption medicReportNameDuration = CustomOption.AddNumber("Tempo em que o relatório do Médico mostram o nome", 5, 0, 60, 2.5f);
-        public static CustomNumberOption medicReportColorDuration = CustomOption.AddNumber("Tempo em que o relatório do Médico mostram o tipo de cor", 20, 0, 120, 2.5f);
+        public static CustomNumberOption medicReportNameDuration = CustomOption.AddNumber("Tempo em que o relatório do Médico mostra o nome", 5, 0, 60, 2.5f);
+        public static CustomNumberOption medicReportColorDuration = CustomOption.AddNumber("Tempo em que o relatório do Médico mostra o tipo de cor", 20, 0, 120, 2.5f);
         public static CustomNumberOption medicSpawnChance = CustomOption.AddNumber("Chance de ter um Médico", 100, 0, 100, 5);
         public static CustomNumberOption officerSpawnChance = CustomOption.AddNumber("Chance de ter um Xerife", 100, 0, 100, 5);
         public static CustomNumberOption engineerSpawnChance = CustomOption.AddNumber("Chance de ter um Engenheiro", 100, 0, 100, 5);
